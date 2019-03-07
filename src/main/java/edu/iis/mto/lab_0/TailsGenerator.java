@@ -7,10 +7,14 @@ import java.util.List;
 public class TailsGenerator {
 
     public List<String> tails(String value) {
-        if(value == null) {return Collections.emptyList(); }
+        if(value == null) {
+            return Collections.emptyList();
+        }
         ArrayList<String> arrayList = new ArrayList<String>();
 
-        for (int i = 0; i < value.length(); i++) { arrayList.add(value.substring(i)); }
+        for (int i = 0; i < value.length(); i++) {
+            arrayList.add(value.substring(i));
+        }
         arrayList.add("");
 
         return arrayList;
